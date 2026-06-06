@@ -13,22 +13,18 @@ body {
   height: 80vh;
   background: white;
   border: 2px dashed #ff69b4;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-
-  text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
-/* buttons now NORMAL (no absolute) */
+/* ⭐ IMPORTANT: absolute positioning */
 .btn {
   width: 160px;
   cursor: pointer;
   user-select: none;
+  position: absolute;   /* FIX */
+  text-align: center;
+  transition: transform 0.1s linear;
 }
 
 .btn img {
@@ -36,11 +32,11 @@ body {
   border-radius: 12px;
 }
 
-/* message stays centered */
 #message {
   position: absolute;
   display: none;
   text-align: center;
+  width: 100%;
 }
 
 #message img {
