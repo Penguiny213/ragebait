@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffe6f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  height: 80vh;
+  background: white;
+  border: 2px dashed #ff69b4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  text-align: center;
+  position: relative;
+}
+
+/* buttons now NORMAL (no absolute) */
+.btn {
+  width: 160px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* message stays centered */
+#message {
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+
+#message img {
+  width: 180px;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #ff1493;
+}
